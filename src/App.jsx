@@ -4,7 +4,7 @@ import './App.css'; // Archivo CSS para estilos personalizados
 import BoletasCalculator from './components/boletas/BoletasCalculator';
 import FarmaciaTurno from './components/farmaciasTurno/FarmaciaTurno';
 import Finiquito from './components/finiquitoCalculo/Finiquito';
-import CalculadoraPlazos from './components/calculadoraPlazos/CalculadoraPlazos'; // Importar el nuevo componente
+import CalculadoraPlazos from './components/CalculadoraPlazos/CalculadoraPlazos'; // Importar el nuevo componente
 
 function App() {
   const [activeComponent, setActiveComponent] = useState(null); // Estado inicial sin componente activo
