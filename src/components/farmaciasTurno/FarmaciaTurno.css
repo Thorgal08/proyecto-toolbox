@@ -1,0 +1,87 @@
+/* Tarjetas de farmacias */
+.farmacia-card {
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .farmacia-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Títulos de las tarjetas */
+  .farmacia-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Texto de las tarjetas */
+  .farmacia-card .card-text {
+    font-size: 0.95rem;
+    color: #495057;
+  }
+  
+  /* Íconos dentro de las tarjetas */
+  .farmacia-card i {
+    font-size: 1.5rem;
+    margin-right: 8px;
+  }
+  
+  /* Banner de ciudad seleccionada */
+  .alert-info {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Campo de búsqueda */
+  .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    padding: 10px 15px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+  }
+  
+  /* Lista desplegable de ciudades */
+  .list-group-item {
+    border: none;
+    padding: 10px 15px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .list-group-item:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .list-group-item.active {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* Botón de regresar */
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

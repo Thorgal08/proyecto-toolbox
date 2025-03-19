@@ -1,0 +1,79 @@
+/* Fondo general */
+body {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Títulos */
+h1 {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Botones personalizados */
+.btn-light-blue {
+  background-color: #5bc0de;
+  border: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-light-blue:hover {
+  background-color: #4aa8c2; /* Variante más oscura del azul claro */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+}
+
+.btn-mint-green {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-mint-green:hover {
+  background-color: #218838; /* Variante más oscura del verde menta */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(40, 167, 69, 0.3);
+}
+
+.btn-golden-yellow {
+  background-color: #ffc107;
+  border: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-golden-yellow:hover {
+  background-color: #e0a800; /* Variante más oscura del amarillo dorado */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(255, 193, 7, 0.3);
+}
+
+/* Botón de regresar */
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Variante más oscura del gris */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(108, 117, 125, 0.3);
+}
+
+/* Botón púrpura para Calculadora de Plazos */
+.btn-purple {
+  background-color: #6f42c1; /* Color púrpura */
+  border: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-purple:hover {
+  background-color: #5e37a3; /* Variante más oscura del púrpura */
+  transform: translateY(-3px); /* Efecto de elevación */
+  box-shadow: 0 8px 15px rgba(111, 66, 193, 0.3); /* Sombra suave */
+}
