@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; // Archivo CSS para estilos personalizados
 import BoletasCalculator from './components/boletas/BoletasCalculator';
 import FarmaciaTurno from './components/farmaciasTurno/farmaciaTurno';
-import Finiquito from './components/finiquitoCalculo/Finiquito';
+import Finiquito from './components/finiquitoCalculo/finiquito';
 import CalculadoraPlazos from './components/CalculadoraPlazos/CalculadoraPlazos'; // Importar el nuevo componente
 
 function App() {
