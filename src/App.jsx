@@ -2,7 +2,7 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; // Archivo CSS para estilos personalizados
 import BoletasCalculator from './components/boletas/BoletasCalculator';
-import FarmaciaTurno from './components/farmaciasTurno/FarmaciaTurno';
+import FarmaciaTurno from './components/farmaciasTurno/farmaciaTurno';
 import Finiquito from './components/finiquitoCalculo/Finiquito';
 import CalculadoraPlazos from './components/CalculadoraPlazos/CalculadoraPlazos'; // Importar el nuevo componente
 
