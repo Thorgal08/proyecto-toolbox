@@ -9,6 +9,8 @@
 body {
   background-color: #f8f9fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos para las tarjetas de herramientas */
@@ -19,6 +21,11 @@ body {
   position: relative;
   overflow: hidden;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
 }
 
 .tool-card:hover {
@@ -42,18 +49,22 @@ body {
 /* Colores de fondo para las tarjetas */
 .bg-light-blue {
   background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
 }
 
 .bg-mint-green {
   background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
 }
 
 .bg-golden-yellow {
   background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: white;
 }
 
 .bg-purple {
   background: linear-gradient(135deg, #9b59b6, #8e44ad);
+  color: white;
 }
 
 /* Estilos para los componentes activos */
@@ -76,10 +87,85 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Estilos para las tarjetas de farmacias */
+.farmacia-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.farmacia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.farmacia-card .card-header {
+  background-color: var(--light-blue);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.farmacia-card .card-body {
+  font-size: 0.9rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaciado entre los elementos */
+}
+
+.farmacia-card .info-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* Espaciado entre el ícono y el texto */
+}
+
+.farmacia-card .info-icon {
+  font-size: 1.5rem;
+  color: var(--light-blue);
+}
+
+.farmacia-card .info-content {
+  flex: 1;
+}
+
+.farmacia-card .info-content strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.farmacia-card .card-footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 15px;
+}
+
+.farmacia-card .btn {
+  font-size: 0.9rem;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
+  .farmacia-card .card-body {
+    font-size: 0.85rem;
+    padding: 15px;
+  }
+
+  .farmacia-card .info-icon {
+    font-size: 1.2rem;
+  }
+
+  .farmacia-card .btn {
+    font-size: 0.85rem;
   }
 }
