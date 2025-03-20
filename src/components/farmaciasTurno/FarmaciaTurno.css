@@ -1,5 +1,6 @@
 .farmacia-turno-container {
   padding: 20px;
+  position: relative;
 }
 
 .search-section {
@@ -27,6 +28,11 @@
   border-radius: 0 0 12px 12px;
 }
 
+.keyboard-active .dropdown-list {
+  top: auto;
+  bottom: 100%; /* Mover la lista hacia arriba cuando el teclado esté activo */
+}
+
 .dropdown-item {
   padding: 10px;
   cursor: pointer;
@@ -36,34 +42,4 @@
 .dropdown-item.active {
   background-color: #007bff;
   color: white;
-}
-
-.farmacia-card {
-  border: none;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.farmacia-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-}
-
-.farmacia-card .card-header {
-  background-color: var(--light-blue);
-}
-
-.info-group {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.info-icon {
-  font-size: 1.5rem;
-  margin-right: 10px;
-}
-
-.info-content p {
-  margin: 0;
 }
