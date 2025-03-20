@@ -1,79 +1,85 @@
-/* Fondo general */
+/* Estilos principales */
+:root {
+  --light-blue: #3498db;
+  --mint-green: #2ecc71;
+  --golden-yellow: #f39c12;
+  --purple: #9b59b6;
+}
+
 body {
-  background: linear-gradient(to right, #f8f9fa, #e9ecef);
-  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Títulos */
-h1 {
-  font-weight: bold;
-  color: #007bff;
+/* Estilos para las tarjetas de herramientas */
+.tool-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Botones personalizados */
-.btn-light-blue {
-  background-color: #5bc0de;
-  border: none;
-  color: white;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
-.btn-light-blue:hover {
-  background-color: #4aa8c2; /* Variante más oscura del azul claro */
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+.tool-card .overlay {
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  transition: opacity 0.3s ease;
 }
 
-.btn-mint-green {
-  background-color: #28a745;
-  border: none;
-  color: white;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+.tool-card:hover .overlay {
+  opacity: 1;
 }
 
-.btn-mint-green:hover {
-  background-color: #218838; /* Variante más oscura del verde menta */
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(40, 167, 69, 0.3);
+/* Colores de fondo para las tarjetas */
+.bg-light-blue {
+  background: linear-gradient(135deg, #3498db, #2980b9);
 }
 
-.btn-golden-yellow {
-  background-color: #ffc107;
-  border: none;
-  color: white;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+.bg-mint-green {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
 }
 
-.btn-golden-yellow:hover {
-  background-color: #e0a800; /* Variante más oscura del amarillo dorado */
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(255, 193, 7, 0.3);
+.bg-golden-yellow {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
 }
 
-/* Botón de regresar */
-.btn-secondary {
-  background-color: #6c757d;
-  border: none;
-  color: white;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+.bg-purple {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
 }
 
-.btn-secondary:hover {
-  background-color: #5a6268; /* Variante más oscura del gris */
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(108, 117, 125, 0.3);
+/* Estilos para los componentes activos */
+.tool-content {
+  animation: fadeIn 0.5s ease;
 }
 
-/* Botón púrpura para Calculadora de Plazos */
-.btn-purple {
-  background-color: #6f42c1; /* Color púrpura */
-  border: none;
-  color: white;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
 }
 
-.btn-purple:hover {
-  background-color: #5e37a3; /* Variante más oscura del púrpura */
-  transform: translateY(-3px); /* Efecto de elevación */
-  box-shadow: 0 8px 15px rgba(111, 66, 193, 0.3); /* Sombra suave */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
